@@ -1,0 +1,18 @@
+# Recursion: Function calling itself with different parameters and base case to terminate
+             the infinite loop.
+
+# Base Case/Halting Condition : Stopping condition in recursion
+
+-function calls itself to solve sub problems.
+
+# Working of Recursive function:
+
+methodName (N parameters)
+{
+  if(haltCondition)
+  {
+  return result;
+  }
+  return methodName(N parameters);
+}
+
