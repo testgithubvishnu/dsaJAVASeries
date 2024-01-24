@@ -1,2 +1,4 @@
-package Queue;public class printFirstNegeativeInteger {
+package Queue;
+
+public class printFirstNegeativeInteger {
 }
