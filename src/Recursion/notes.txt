@@ -16,3 +16,7 @@ methodName (N parameters)
   return methodName(N parameters);
 }
 
+1] subProblem
+2] selfWork
+3] BaseCase
+
