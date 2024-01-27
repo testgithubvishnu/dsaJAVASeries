@@ -1,0 +1,10 @@
+# Tree traversal techniques:
+1]Pre-Order Traversal:
+ Root
+ Left subtree
+ Right subtree
+
+2]Post-Order traversal:
+
+
+3]In-order traversal
