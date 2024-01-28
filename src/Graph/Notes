@@ -1,0 +1,39 @@
+
+# GRAPH REPRESENTATION:
+-----------------------
+#To represent the graph we use the following ways:
+
+1] Adjacency List:
+- We uses array of arraylist to store edges
+- to find the neighbour time complexity id O(1)
+
+2] Adjacency matrix:
+ -It is not prefered because it need more space to store and
+ to find neighbour nodes it need O(v) time.
+
+3] Edge List:
+-we use arraylist,linkedlist
+-used in algorithm like sorting edges
+-used in minimum spanning tree
+
+4]Implicit graph:
+-Already given graph
+
+# GRAPH TRAVERSAL:
+-Process of visiting each vertx in graph.
+--------------------
+1] Breadth First Search [BFS]:
+- Queue is used for searching
+- gO TO IMMEDIATE NEIGHBOUR FIRST
+- Level order traversal
+- Usefull to find shortest path from one vertex to another
+
+# Applications:
+1] flood fill algorithm
+2] cycle detection algorithm
+3] Maze generation algorithm
+4]testing graph for bip
+
+2] Depth First Search [DFS]:
+-Stack is useed
+- keep going to the first neighbour
