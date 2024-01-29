@@ -1,0 +1,11 @@
+# Wrapper Class:
+- A class whose object contains or wraps Primitive Data Type
+- A object of  a wrapper class contains a field which stores Primitive Data Type.
+
+PDT     Wrapper class
+--      -------------
+int     Integer
+float   Float
+char    Character
+boolean Boolean
+long    Long
