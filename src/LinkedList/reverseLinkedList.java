@@ -20,9 +20,19 @@ public class reverseLinkedList {
             temp=temp.next;
         }
     }
+//    static void printReverse(Node head)
+//    {
+//        if(head==null) return;
+//        printReverse(head.next);
+//        System.out.print(head.data+" ");
+//    }
     static Node reverseLL(Node head)
     {
-        Node
+        if(head.next==null) return head;
+        Node newhead=reverseLL(head.next);
+        head.next.next=head;
+        head.next=null;
+        return newhead;
     }
     public static void main(String[] args) {
         Node n1=new Node(2);
@@ -40,6 +50,10 @@ public class reverseLinkedList {
         n5.next=n6;
         n6.next=n7;
 
+        printLL(n1);
+        System.out.println();
         printLL(reverseLL(n1));
+        //printReverse(n1);
+
     }
 }
