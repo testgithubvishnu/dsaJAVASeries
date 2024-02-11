@@ -26,14 +26,34 @@ public class reverseLinkedList {
 //        printReverse(head.next);
 //        System.out.print(head.data+" ");
 //    }
-    static Node reverseLL(Node head)
-    {
-        if(head.next==null) return head;
-        Node newhead=reverseLL(head.next);
-        head.next.next=head;
-        head.next=null;
-        return newhead;
-    }
+
+    // USING RECURSION:
+//    static Node reverseLL(Node head)
+//    {
+//        if(head.next==null) return head;
+//        Node newhead=reverseLL(head.next);
+//        head.next.next=head;
+//        head.next=null;
+//        return newhead;
+//    }
+
+    // using three pointe approach:
+     static Node reverseLL(Node head)
+     {
+         Node prev=null;
+         Node curr=head;
+         Node agla=null;
+
+         while(curr!=null) {
+             agla = curr.next;
+             curr.next = prev;
+             prev = curr;
+             curr = agla;
+         }
+         return prev;
+
+     }
+
     public static void main(String[] args) {
         Node n1=new Node(2);
         Node n2=new Node(7);
@@ -50,9 +70,13 @@ public class reverseLinkedList {
         n5.next=n6;
         n6.next=n7;
 
-        printLL(n1);
+      //  printLL(n1);
         System.out.println();
+
+        // 3 pointer:
         printLL(reverseLL(n1));
+
+        // recursion:
         //printReverse(n1);
 
     }
