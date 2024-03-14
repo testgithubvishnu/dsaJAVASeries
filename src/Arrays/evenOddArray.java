@@ -18,7 +18,7 @@ public class evenOddArray {
     static  void evenOddArray(int[] arr)
     {
         int i=0;
-        int j= arr.length-1;;
+        int j= arr.length-1;
         while(i<j)
         {
             if(arr[i]%2==1 && arr[j]%2==0)

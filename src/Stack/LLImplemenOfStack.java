@@ -3,7 +3,7 @@ package Stack;
 import java.util.Stack;
 
 public class LLImplemenOfStack {
-    public static  class Node
+    static  class Node
     {
         int val;
         Node next;

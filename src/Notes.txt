@@ -1,0 +1,28 @@
+# Time and Space Complexity:
+=========================
+Rate at which time taken increases with respect to input size
+
+Big-oh notation:O(time_taken)
+
+TC worst time complexity:
+avoid contants
+avoid lower values
+
+Big-oh(O)        Theta(0)             Omega()
+worst case      Average case         best case
+
+# Space Complexity:
+Auxiliary space   +    input space
+To solve problem      To store problem
+
+    c         =    a+b
+Auxiliary         input space
+space
+
+#ARRAYS:
+Maximum size of array that you declare is :
+inside function:10^6
+Globally : 10^7
+
+if we define array globally it filled with 0's
+
