@@ -7,6 +7,8 @@ public class setMatrixZero {
         int row= matrix.length;
         int col=matrix[0].length;
 
+
+        //Approach 1:
         int[] r=new int[row];
         int[] c= new int[col];
 
@@ -16,10 +18,31 @@ public class setMatrixZero {
             {
                 if(matrix[i][j]==0)
                 {
-                    r[i]=0;
-                    c[j]=0;
+                    r[i]=1;
+                    c[j]=1;
                 }
             }
+        }
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<col;j++)
+            {
+               if(r[i]==1 || c[j]==1)
+               {
+                   matrix[i][j]=0;
+               }
+            }
+        }
+// Space Complexity: m+n
+// Time Complexity: (m*n)*(m+n)
+
+        for(int i=0;i<row;i++)
+        {
+            for(int j=0;j<col;j++)
+            {
+                System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println();
         }
 
     }
