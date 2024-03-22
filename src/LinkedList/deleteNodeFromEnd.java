@@ -26,8 +26,7 @@ public class deleteNodeFromEnd {
         {
             temp=temp.next;
         }
-        Node temp1=temp.next.next;
-        temp.next=temp1;
+        temp.next=temp.next.next;;
 
     }
     static void printLL(Node head)
