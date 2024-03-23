@@ -13,6 +13,9 @@ public class MergeTwoSortedLL {
 
     static Node mergeLinkedList(Node head1,Node head2)
     {
+
+        // Bruit-Force Approach:
+
         Node temp1=head1;
         Node temp2=head2;
         Node head= new Node(45);
@@ -42,6 +45,9 @@ public class MergeTwoSortedLL {
             temp.next=temp1;
         }
         return head.next;
+
+        // Optimal-Approach:
+
     }
     static void printLL(Node head)
     {

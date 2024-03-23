@@ -1,4 +1,5 @@
 package TwoPointerApproach;
+import java.util.*;
 
 import java.lang.reflect.Array;
 import java.net.Inet4Address;
@@ -70,7 +71,31 @@ public class ThreeSumProblem {
 
           // Optimal Appraoch: Using Two Pointer
         // We will Sort array first
-          int[] arr ={-2,-2,-1,-1,-1,0,0,0,2,2,2};
+          int[] arr ={-2,2,-2,-1,-1,2,0,0,2,0,-1};
+          int n=arr.length;
+          Arrays.sort(arr);
+
+
+
+          for(int i=0;i<n;i++)
+          {
+              int j=i+1;
+              int k=n-1;
+
+              if((arr[i]+arr[j]+arr[k])==0) {
+                 while(arr[j]!=arr[k])
+                 {
+                     j++;
+                 }
+              }
+              else if((arr[i]+arr[j]+arr[k])>0)
+              {
+                  k--;
+              }
+              else{
+                  j++;
+              }
+          }
 
         }
 
