@@ -1,0 +1,6 @@
+
+1] For the outer loop , count the number of number of rows
+2] For the inner loop , focus on the columns and connect them
+ somewhow to the rows.
+3] Print then '*' inside the inner for loop
+4] observe symmetry [optional]
