@@ -26,3 +26,14 @@ Globally : 10^7
 
 if we define array globally it filled with 0's
 
+============================================================
+
+Binary trees:
+# Traversal Techniques:
+[1] DFS : Depth First Search
+    1 ] Inorder  -> Left-Root-Right
+    2 ] Preorder -> Root-Left-Right
+    3 ] PostOrder -> Left-Right-Root
+
+[2] BFS : Breadth First Search:
+Go Level-Order traversal
